@@ -1,6 +1,6 @@
 <?php
 
-namespace Aleksa\LaravelVisitorsStatistics\Console\Commands;
+namespace Websea\LaravelVisitorsStatistics\Console\Commands;
 
 use Exception;
 use Illuminate\Console\Command;

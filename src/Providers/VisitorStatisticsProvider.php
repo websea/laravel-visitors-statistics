@@ -1,11 +1,11 @@
 <?php
 
-namespace Aleksa\LaravelVisitorsStatistics\Providers;
+namespace Websea\LaravelVisitorsStatistics\Providers;
 
-use Aleksa\LaravelVisitorsStatistics\Console\Commands\UpdateMaxMindDatabase;
-use Aleksa\LaravelVisitorsStatistics\GeoIP;
-use Aleksa\LaravelVisitorsStatistics\Http\Middleware\RecordVisits;
-use Aleksa\LaravelVisitorsStatistics\Visitor;
+use Websea\LaravelVisitorsStatistics\Console\Commands\UpdateMaxMindDatabase;
+use Websea\LaravelVisitorsStatistics\GeoIP;
+use Websea\LaravelVisitorsStatistics\Http\Middleware\RecordVisits;
+use Websea\LaravelVisitorsStatistics\Visitor;
 use DeviceDetector\DeviceDetector;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Support\Facades\Route;
@@ -19,13 +19,13 @@ class VisitorStatisticsProvider extends ServiceProvider
     public function register()
     {
         $this->app->bind(
-            'Aleksa\LaravelVisitorsStatistics\Contracts\Tracker',
-            'Aleksa\LaravelVisitorsStatistics\Tracker'
+            'Websea\LaravelVisitorsStatistics\Contracts\Tracker',
+            'Websea\LaravelVisitorsStatistics\Tracker'
         );
-        $this->app->bind('Aleksa\LaravelVisitorsStatistics\Contracts\Visitor', function ($app, $parameters) {
+        $this->app->bind('Websea\LaravelVisitorsStatistics\Contracts\Visitor', function ($app, $parameters) {
             return new Visitor($parameters['ipAddress'], $parameters['userAgent'], new DeviceDetector());
         });
-        $this->app->bind('Aleksa\LaravelVisitorsStatistics\Contracts\GeoIP', function ($app, $parameters) {
+        $this->app->bind('Websea\LaravelVisitorsStatistics\Contracts\GeoIP', function ($app, $parameters) {
             return new GeoIP($parameters['ipAddress']);
         });
     }
@@ -76,7 +76,7 @@ class VisitorStatisticsProvider extends ServiceProvider
 
         Route::prefix($config['prefix'])
             ->middleware($config['middleware'])
-            ->namespace('Aleksa\LaravelVisitorsStatistics\Http\Controllers')
+            ->namespace('Websea\LaravelVisitorsStatistics\Http\Controllers')
             ->group(__DIR__ . '/../routes/web.php');
     }
 }

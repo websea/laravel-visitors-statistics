@@ -1,6 +1,6 @@
 <?php
 
-namespace Aleksa\LaravelVisitorsStatistics\Contracts;
+namespace Websea\LaravelVisitorsStatistics\Contracts;
 
 interface Tracker
 {

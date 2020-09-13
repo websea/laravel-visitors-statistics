@@ -1,6 +1,6 @@
 <?php
 
-namespace Aleksa\LaravelVisitorsStatistics\Models;
+namespace Websea\LaravelVisitorsStatistics\Models;
 
 use Eloquent;
 use Illuminate\Database\Eloquent\Builder;

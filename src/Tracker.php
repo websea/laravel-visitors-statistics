@@ -1,11 +1,11 @@
 <?php
 
-namespace Aleksa\LaravelVisitorsStatistics;
+namespace Websea\LaravelVisitorsStatistics;
 
-use Aleksa\LaravelVisitorsStatistics\Contracts\Tracker as TrackerContract;
-use Aleksa\LaravelVisitorsStatistics\Contracts\Visitor as VisitorContact;
-use Aleksa\LaravelVisitorsStatistics\Models\Statistic;
-use Aleksa\LaravelVisitorsStatistics\Models\Visitor as VisitorModel;
+use Websea\LaravelVisitorsStatistics\Contracts\Tracker as TrackerContract;
+use Websea\LaravelVisitorsStatistics\Contracts\Visitor as VisitorContact;
+use Websea\LaravelVisitorsStatistics\Models\Statistic;
+use Websea\LaravelVisitorsStatistics\Models\Visitor as VisitorModel;
 use Carbon\Carbon;
 use Carbon\CarbonInterface;
 use Illuminate\Http\Request;

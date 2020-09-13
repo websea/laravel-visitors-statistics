@@ -1,9 +1,9 @@
 <?php
 
-namespace Aleksa\LaravelVisitorsStatistics;
+namespace Websea\LaravelVisitorsStatistics;
 
-use Aleksa\LaravelVisitorsStatistics\Contracts\Visitor as VisitorContract;
-use Aleksa\LaravelVisitorsStatistics\Contracts\GeoIP as GeoIPContract;
+use Websea\LaravelVisitorsStatistics\Contracts\Visitor as VisitorContract;
+use Websea\LaravelVisitorsStatistics\Contracts\GeoIP as GeoIPContract;
 use DeviceDetector\DeviceDetector;
 
 class Visitor implements VisitorContract

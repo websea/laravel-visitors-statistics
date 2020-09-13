@@ -1,8 +1,8 @@
 <?php
 
-namespace Aleksa\LaravelVisitorsStatistics;
+namespace Websea\LaravelVisitorsStatistics;
 
-use Aleksa\LaravelVisitorsStatistics\Contracts\GeoIP as GeoIPContract;
+use Websea\LaravelVisitorsStatistics\Contracts\GeoIP as GeoIPContract;
 use Exception;
 use Illuminate\Support\Facades\Log;
 use MaxMind\Db\Reader;

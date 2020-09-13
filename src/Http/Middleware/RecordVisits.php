@@ -1,8 +1,8 @@
 <?php
 
-namespace Aleksa\LaravelVisitorsStatistics\Http\Middleware;
+namespace Websea\LaravelVisitorsStatistics\Http\Middleware;
 
-use Aleksa\LaravelVisitorsStatistics\Tracker;
+use Websea\LaravelVisitorsStatistics\Tracker;
 use Closure;
 use Illuminate\Http\Request;
 

@@ -1,9 +1,9 @@
 <?php
 
-namespace Aleksa\LaravelVisitorsStatistics\Http\Controllers;
+namespace Websea\LaravelVisitorsStatistics\Http\Controllers;
 
-use Aleksa\LaravelVisitorsStatistics\Models\Visitor;
-use Aleksa\LaravelVisitorsStatistics\Models\Statistic;
+use Websea\LaravelVisitorsStatistics\Models\Visitor;
+use Websea\LaravelVisitorsStatistics\Models\Statistic;
 use App\Http\Controllers\Controller;
 use Carbon\Carbon;
 use Illuminate\Http\JsonResponse;
